@@ -1,0 +1,27 @@
+import java.awt.*;
+ class PopupMenuExample extends Frame
+ {
+      PopupMenu popupMenu;
+      public PopupMenuExample()
+     {
+            setLayout(new FlowLayout());
+            popupMenu = new PopupMenu();
+            popupMenu.add(new MenuItem("Cut"));
+            popupMenu.addSeparator();
+            popupMenu.add(new MenuItem("Copy"));
+            popupMenu.addSeparator();
+            popupMenu.add(new MenuItem("paste"));
+            add(popupMenu);    
+            setTitle("PopupMenu in Java Example");
+            setSize(300,120);
+            setVisible(true);
+            popupMenu.show(this,100,100);
+     }
+ }
+  class popupmenu
+  {
+         public static void main(String[] args)
+        {
+             PopupMenuExample frame = new PopupMenuExample();
+ } 
+}
