@@ -1,0 +1,30 @@
+import javax.swing.*;
+import java.awt.*;
+class textarea1 extends JFrame{
+    JTextArea a1;
+    JPanel jp;
+    JLabel l1;
+    JPasswordField k1;
+    textarea1(){
+        setSize(1600, 1600);
+        setBackground(Color.BLUE);
+        setVisible(true);
+        a1=new JTextArea(10,10);
+        jp=new JPanel();
+        l1=new JLabel("Enter the password");
+        k1=new JPasswordField(20);
+        setLayout(new FlowLayout());
+        add(l1);
+        add(k1);
+        add(jp);
+        jp.add(a1);
+
+    }
+}
+
+public class Textarea {
+    public static void main(String[] args) {
+        new textarea1();
+    }
+    
+}
