@@ -1,0 +1,39 @@
+//  class access_private {
+//     private void msg(){
+//         System.out.println("hello");
+//     }
+//     public static void main(String[] args) {
+//         access_private obj=new access_private();
+//         obj.msg();   
+//     }   
+// }
+
+
+import java.util.Scanner;
+public class ArmstrongNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = sc.nextInt();
+        for (int i = num1; i <= num2; i++) {
+            int digits = 0;
+            int result = 0;
+            int originalNumber = i;
+            while (originalNumber != 0) {
+                digits++;
+                originalNumber /= 10;
+            }
+            originalNumber = i;
+            while (originalNumber != 0) {
+                int remainder = originalNumber % 10;
+                result += Math.pow(remainder, digits);
+                originalNumber /= 10;
+            }
+            if (result == i) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
