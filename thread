@@ -1,0 +1,15 @@
+public class threadI implements Runnable{
+    public static void main(String[] args) {
+        threadI obj = new threadI();
+        Thread obj1 = new Thread(obj);
+        obj1.start();
+        obj.display();
+    }
+    public void run(){
+        System.out.println("hello");
+    }
+
+    public void display(){
+        System.out.println("Anant");
+    }
+}
