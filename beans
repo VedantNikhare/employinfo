@@ -1,0 +1,23 @@
+public class javabeans {
+    public static void main(String[] args) {
+        A obj = new A();
+        obj.setAge(0);
+        int A = obj.setAge(21);
+        System.out.println(A);
+    }
+}
+
+ class A implements java.io.Serializable {
+    private String name;
+    public A() {
+    }
+
+    public int setAge(int age) {
+        return age;
+    }
+
+    public String getId() {
+        return name;
+    }
+
+}
