@@ -1,0 +1,21 @@
+class A{
+    //Demo of public data members
+//    public void show(){
+//         System.out.println("Hello!");
+//     }
+
+};
+
+public class revision_accessmodifiers {
+    private void show(){
+        System.out.println("Hello");
+    }
+    public static void main(String[] args) {
+        //Demo of private data member
+        revision_accessmodifiers ob=new revision_accessmodifiers();
+        ob.show();
+        // A obj=new A();
+        // obj.show();
+    }
+
+}
