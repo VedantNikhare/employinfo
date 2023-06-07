@@ -1,0 +1,10 @@
+public class mythread3 implements Runnable {
+    public static void main(String[] args) {
+        mythread3 ob1=new mythread3();
+        Thread ob=new Thread(ob1);
+        ob.start();
+    }
+    public void run(){
+        System.out.println("hello");
+    }  
+}
