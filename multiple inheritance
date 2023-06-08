@@ -1,0 +1,26 @@
+class gparent{
+    void member(){
+        System.out.println("eldest");
+    }
+}
+class parent extends gparent{
+    void member1(){
+        System.out.println("elder");
+    }
+}
+class child extends parent{
+    void member2(){
+        System.out.println("youngest");
+    }
+}
+
+
+public class multilevel_inheritance {
+    public static void main(String[] args) {
+        child obj=new child();
+        obj.member();
+        obj.member1();
+        obj.member2();
+    }
+    
+}
